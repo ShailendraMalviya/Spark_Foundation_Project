@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Bank of Spark</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Josefin Sans', sans-serif;
+	}
+
+	.cl {
+		background-color: #e3b4b4;
+	}
+
+	.hd {
+		background-color: #fa6d48;
+	}
+
+	body {
+		background-color: #35b9e7;
+	}
+
+	.header {
+		width: 100%;
+		height: 100vh;
+		background-size: 100% 100%;
+	}
+
+	.mainHeader {
+		width: 100%;
+		height: 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.mainHeader nav {
+		width: 650px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 30px;
+	}
+
+	.mainHeader .active {
+		box-sizing: border;
+		border: 4px solid rgba(0, 0, 0, 0.295);
+		padding: 15px;
+		color: rgb(116, 7, 7);
+		padding: 10px 45px;
+		text-align: center;
+		font-size: 14px;
+		color: #fff;
+		border: none;
+		background-color: #4caf50;
+		border-radius: 10px;
+	}
+
+	.mainHeader nav a {
+		text-decoration: none;
+		color: #110ddf;
+		text-transform: uppercase;
+	}
+
+	.mainHeader nav a:hover {
+
+		background-color: black;
+		border-radius: 2px;
+		color: blue;
+
+	}
+
+	.mainHeader button {
+		padding: 10px 45px;
+		text-align: center;
+		font-size: 14px;
+		color: #fff;
+		border: none;
+		background-image: linear-gradient(to right, #13cf2c, #13ec1e, #0cf318);
+		border-radius: 15px;
+	}
+</style>
+
+<body>
+
+	<div class="header">
+		<div class="mainHeader">
+			<nav class="">
+
+				<a href="index.html">Home</a>
+				<a href="bank1.html" class="active">View All Customers</a>
+				<a href="moneytranc.html">Money Transaction</a>
+
+			</nav>
+			<div class="menubtn">
+
+				<button>Help?</button>
+
+			</div>
+		</div>
+
+		<div class="container">
+			<h2 class="py-3">Customers List</h2>
+			<table class="table table-hover">
+				<thead>
+
+					<tr class="hd">
+						<th>Account Number</th>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Balance</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="cl">
+						<td>1</td>
+						<td>Shailendra</td>
+						<td>shailendra123@gmail.com</td>
+						<td>id="ShailendraBankBalance"</td>
+						<td>230000</td>
+					</tr>
+					<tr class="cl">
+						<td>2</td>
+						<td>rohit</td>
+						<td>rohit500@gmail.com</td>
+						<td>id="RohitBankBalance"</td>
+						<td>349900</td>
+
+					</tr>
+					<tr class="cl">
+						<td>3</td>
+						<td>Swati</td>
+						<td>Swati145@gmail.com</td>
+						<td> id="SwatiBankBalance"</td>
+						<td>123000</td>
+					</tr>
+					<tr class="cl">
+						<td>4</td>
+						<td>ANAMIKA</td>
+						<td>anamika@gmail.com</td>
+						<td>id="priya"</td>
+						<td>180000</td>
+					</tr>
+					<tr class="cl">
+						<td>5</td>
+						<td>priya</td>
+						<td>priya124@gmail.com</td>
+						<td>id="priya"</td>
+						<td>351000</td>
+					</tr>
+					<tr class="cl">
+						<td>6</td>
+						<td>Aman</td>
+						<td>aman156@gmail.com</td>
+						<td>id="AmanBankBalance"</td>
+						<td>453200</td>
+					</tr>
+					<tr class="cl">
+						<td>7</td>
+						<td>Ranu</td>
+						<td>ranu458@gmail.com</td>
+						<td>id="RanuBankBalance"</td>
+						<td>4530000</td>
+					</tr>
+					<tr class="cl">
+						<td>8</td>
+						<td>Rahul</td>
+						<td>rahul832@gmail.com</td>
+						<td>id="RahulBankBalance"</td>
+						<td>56000</td>
+					</tr>
+
+					<tr class="cl">
+						<td>9</td>
+						<td>Shikha</td>
+						<td>shikha@gmail.com</td>
+						<td>id="ShikhaBankBalance"</td>
+						<td>664800</td>
+					</tr>
+					<tr class="cl">
+						<td>10</td>
+						<td>Rohan</td>
+						<td>rohan@gmail.com</td>
+						<td>id="RohanBankBalance"</td>
+						<td>345500</td>
+					</tr>
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+
+</html>
